@@ -1,14 +1,11 @@
 package BUU.ZSpider.consoler;
 
+import BUU.ZSpider.pageProcess.CommonPageprocess;
 import us.codecraft.webmagic.Spider;
 
 public class Consoler {
-	/**
-	 * 启动
-	 */
-	public void start(){
-//		Spider
-		
+	public static void main(String[] args) {
+		Spider.create(new CommonPageprocess()).addUrl("http://focus.tianya.cn//")
+				.run();
 	}
-
 }
